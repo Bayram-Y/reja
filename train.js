@@ -1,2 +1,2 @@
 // A-TASK
-console.log("TRAIN AREA  !");
+console.log("TRAIN AREA!");
