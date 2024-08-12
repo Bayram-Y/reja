@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 
 app.post("/create-item", (req, res) => {
   console.log(req.body);
-  res.json({ test: "success" });
+  res.json({ "test": "success" });
   //TODO: code with db here
 });
 

@@ -12,7 +12,7 @@
   "author": "Marcus",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.0.0",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
   }
