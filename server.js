@@ -4,9 +4,9 @@ const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
-const { parse } = require("path");
+
 let user;
-fs.readFileSync("database/user.json", "utf8", (err, data) => {
+fs.readFile("database/user.json", "utf8", (err, data) => {
   if (err) {
     console.log("ERROR:", err);
   } else {
