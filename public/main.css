@@ -382,6 +382,39 @@
   flex-shrink: 0;
   background: var(--White, #fff);
 }
+
+.frame .main_frame .midd_frame .midd_top .abs {
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 390px;
+}
+.frame .main_frame .midd_frame .midd_top .abs2 {
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 300px;
+}
+.frame .main_frame .midd_frame .midd_top .abs3 {
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 420px;
+}
+.frame .main_frame .midd_frame .midd_top .abs4 {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 380px;
+}
+.frame .main_frame .midd_frame .midd_top .abs5 {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.frame .main_frame .midd_frame .midd_top .abs6 {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 50px;
+}
+
 .frame .main_frame .midd_frame .midd_top .midd-left {
   position: relative;
   display: flex;
