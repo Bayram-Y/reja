@@ -480,8 +480,12 @@
 }
 .frame .main_frame .midd_frame .midd_top .midd-right {
   width: 326.055px;
-  height: 446.633px;
+  height: 460.633px;
   flex-shrink: 0;
+}
+.frame .main_frame .midd_frame .midd_top .midd-right img {
+  width: 326.055px;
+  height: 462.633px;
 }
 
 .frame .main_frame .midd_frame .midd_midd {
@@ -521,7 +525,7 @@
   font-feature-settings: "calt" off;
 
   /* P-15px paragraph */
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -628,6 +632,7 @@
 .main_frame .midd_frame .midd_bottom .bottom_content .midd_adver {
   position: relative;
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin-top: 20px;
   justify-content: center;
