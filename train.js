@@ -76,7 +76,7 @@ console.log("passed here 1");
 // ASYNC functions
 
 // async function maslahatBering(a) {
-//   if (typeof a !== "number") throw new Error("insert a number", null);
+//   if (typeof a !== "number") throw new Error("insert a number");
 //   else if (a <= 20) return list[0];
 //   else if (a > 20 && a <= 30) return list[1];
 //   else if (a > 30 && a <= 40) return list[2];
