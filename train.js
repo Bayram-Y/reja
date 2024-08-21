@@ -146,8 +146,8 @@ function countDigits(x) {
   let count = 0;
   const mix = x.split("");
   console.log(mix);
-  mix.forEach((ele) => {
-    if (typeof +ele !== NaN && typeof +ele ===0) {
+  mix.forEach((index) => {
+    if (Number.parseInt(index) || Number.parseInt(index) === 0) {
       count++;
     }
   });
@@ -156,14 +156,14 @@ function countDigits(x) {
 
 countDigits("ad2a54y79wet0sfgb9");
 
-// function countDigits(mix) {
-//   let count = 0;
-//   for (let i = 0; i <= mix.length; i++) {
-//     if (Number.parseInt(mix[i])) {
-//       count++;
-//     }
-//   }
-//   console.log(count);
-// }
+function countDigits(mix) {
+  let count = 0;
+  for (let i = 0; i <= mix.length; i++) {
+    if (Number.parseInt(mix[i]) || Number.parseInt(mix[i]) === 0) {
+      count++;
+    }
+  }
+  console.log(count);
+}
 
-// countDigits("ad2a54y79wet0sfgb9");
+countDigits("ad2a54y79wet0sfgb9");
