@@ -36,6 +36,8 @@ console.log("passed here 1");
 
 */
 
+const { type } = require("express/lib/response");
+
 // Asynchronus functions
 
 // console.log("Jack Ma maslahatlari");
@@ -119,15 +121,49 @@ console.log("passed here 1");
 
 // MITTASK  // A-TASK
 
-function countLetter(letter, word) {
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+
+//   console.log(count);
+// }
+
+// countLetter("e", "engineer");
+
+// MITTASK  // B-TASK
+/* B-TASK: 
+
+Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+
+@MITASK */
+
+function countDigits(x) {
   let count = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === letter) {
+  const mix = x.split("");
+  console.log(mix);
+  mix.forEach((ele) => {
+    if (typeof +ele !== NaN && typeof +ele ===0) {
       count++;
     }
-  }
-
+  });
   console.log(count);
 }
 
-countLetter("e", "engineer");
+countDigits("ad2a54y79wet0sfgb9");
+
+// function countDigits(mix) {
+//   let count = 0;
+//   for (let i = 0; i <= mix.length; i++) {
+//     if (Number.parseInt(mix[i])) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+
+// countDigits("ad2a54y79wet0sfgb9");
