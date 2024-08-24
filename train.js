@@ -191,7 +191,7 @@ class Shop {
   //method
   qoldiq() {
     console.log(
-      ` Hozir ${moment().format("hh:mm")} da ${this.non} non , ${
+      ` Hozir ${moment().format("LT")} da ${this.non} non , ${
         this.lagmon
       } lagmon va ${this.cola} cola mavjud !`
     );
@@ -200,7 +200,7 @@ class Shop {
   sotish(narsa, soni) {
     if (narsa === "non" || narsa === "lagmon" || narsa === "cola") {
       console.log(
-        `Hozir ${moment().format("hh:mm")} da ${narsa} ${soni} ta sotildi!`
+        `Hozir ${moment().format("LT")} da ${narsa} ${soni} ta sotildi!`
       );
       this[narsa] -= soni;
     }
@@ -209,7 +209,7 @@ class Shop {
   qabul(tovar, son) {
     if (tovar === "non" || tovar === "lagmon" || tovar === "cola") {
       console.log(
-        `Hozir ${moment().format("hh:mm")} da ${tovar} ${son} ta sotildi!`
+        `Hozir ${moment().format("LT")} da ${tovar} ${son} ta sotildi!`
       );
       this[tovar] += son;
     }
