@@ -36,7 +36,7 @@ console.log("passed here 1");
 
 */
 
-const { type } = require("express/lib/response");
+const res = require("express/lib/response");
 
 // Asynchronus functions
 
@@ -175,6 +175,7 @@ Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass
 MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
 */
 
+/*
 const moment = require("moment");
 
 class Shop {
@@ -225,3 +226,27 @@ shop.sotish("non", 3);
 shop.qabul("cola", 4);
 console.log("=========================================================");
 shop.qoldiq();
+
+*/
+
+
+// D-TASK: 
+
+
+function checkContent(word1, word2) {
+  const soz = word2.split("");
+  const soz2 = word1.split("");
+  const result = soz.every((ele) => {
+    return soz2.includes(ele);
+  });
+  const result2 = soz2.every((item) => {
+    return soz.includes(item);
+  });
+  if (result && result2) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+checkContent("mitgroup", "gmtiprou");

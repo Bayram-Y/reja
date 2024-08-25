@@ -47,7 +47,7 @@ app.post("/edit-item", (req, res) => {
     },
     { $set: { reja: data.new_input } },
     function (err, data) {
-      res.json({ state: success });
+      res.json({ state: "success" });
     }
   );
 });
