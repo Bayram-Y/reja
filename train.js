@@ -36,8 +36,6 @@ console.log("passed here 1");
 
 */
 
-const res = require("express/lib/response");
-
 // Asynchronus functions
 
 // console.log("Jack Ma maslahatlari");
@@ -229,24 +227,31 @@ shop.qoldiq();
 
 */
 
+// D-TASK:
 
-// D-TASK: 
+// function checkContent(word1, word2) {
+//   const soz = word2.split("");
+//   const soz2 = word1.split("");
+//   const result = soz.every((ele) => {
+//     return soz2.includes(ele);
+//   });
+//   const result2 = soz2.every((item) => {
+//     return soz.includes(item);
+//   });
+//   if (result && result2) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
 
+// checkContent("mitgroup", "gmtiprou");
 
-function checkContent(word1, word2) {
-  const soz = word2.split("");
-  const soz2 = word1.split("");
-  const result = soz.every((ele) => {
-    return soz2.includes(ele);
-  });
-  const result2 = soz2.every((item) => {
-    return soz.includes(item);
-  });
-  if (result && result2) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
+// E-TASK:
+
+function getReverse(x) {
+  const word = x.split("").reverse().join("");
+  console.log(word);
 }
 
-checkContent("mitgroup", "gmtiprou");
+getReverse("hello");
