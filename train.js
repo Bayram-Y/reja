@@ -249,9 +249,23 @@ shop.qoldiq();
 
 // E-TASK:
 
-function getReverse(x) {
-  const word = x.split("").reverse().join("");
-  console.log(word);
+// function getReverse(x) {
+//   const word = x.split("").reverse().join("");
+//   console.log(word);
+// }
+
+// getReverse("hello");
+
+// F-TASK:
+
+function findDoublers(x) {
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === x[i + 1]) {
+      return true;
+    }
+  }
+  return false;
 }
 
-getReverse("hello");
+const result = findDoublers("HELLO");
+console.log(result);

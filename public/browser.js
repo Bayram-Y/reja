@@ -27,6 +27,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
   axios
     .post("/create-item", { reja: createField.value })
     .then((response) => {
+      console.log(response.data);
       document
         .getElementById("item-list")
         .insertAdjacentHTML("beforeend", itemTemplate(response.data));
@@ -45,7 +46,6 @@ document.addEventListener("click", function (e) {
       axios
         .post("/delete-item", { id: e.target.getAttribute("data-id") })
         .then((response) => {
-          console.log(response.data);
           e.target.parentElement.parentElement.remove();
         })
         .catch((err) => {

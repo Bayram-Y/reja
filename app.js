@@ -7,9 +7,9 @@ const db = require("./server").db();
 const mongodb = require("mongodb");
 
 //1: Kirish kodlari
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public")); // Middleware Design Pattern
+app.use(express.json()); // Rest API
+app.use(express.urlencoded({ extended: true })); // Traditional API
 
 //2: Session code
 //3: Views code
@@ -22,7 +22,6 @@ app.post("/create-item", (req, res) => {
   console.log("user entered /create-item");
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    console.log(data.ops);
     res.json(data.ops[0]);
   });
 });
